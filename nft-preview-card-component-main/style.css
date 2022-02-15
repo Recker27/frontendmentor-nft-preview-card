@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:hsl(217, 54%, 11%);
+    font-family: 'Outfit', sans-serif;
+}
+
+main {
+    background-color:hsl(216, 50%, 16%);
+    width: 375px;
+    margin: 200px auto;
+    padding: 25px;
+    border-radius: 20px;
+}
+
+
+.images-container {
+    position: relative;
+    display: inline-block;
+}
+
+.img-coin {
+    width: 100%;
+    border-radius: 15px;
+    display: block;
+    height: auto; 
+}
+
+.images-container:active .overlay {
+    opacity: 0.6;
+}
+
+.images-container:active .icon-view {
+    opacity: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: cyan;
+    border: 1px solid red;
+    opacity: 0;
+}
+
+.icon-view {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.main-header {
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.main-header:active {
+    color:cyan;
+}
+
+.description {
+    margin-top: 20px;
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.price-container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    margin-top: 20px;
+    font-weight: 600;
+    padding-bottom: 30px;
+}
+
+.price-container .price, .time {
+    display: flex;
+    align-items: center;
+}
+
+.price {
+    color: cyan;
+}
+
+.time{
+    color: hsl(215, 51%, 70%);
+}
+
+.price img,
+.time img {
+    margin-right: 6px
+}
+
+
+.profile{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    border-top: 1px solid hsl(215, 51%, 70%);
+}
+.img-avatar {
+    width: 35px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.profile-desc {
+    color: hsl(215, 51%, 70%)
+}
+
+.profile-desc a {
+    text-decoration: none;
+    color: white
+}
+
+.profile-desc a:active {
+    color: cyan;
+}
+
+
+
+
